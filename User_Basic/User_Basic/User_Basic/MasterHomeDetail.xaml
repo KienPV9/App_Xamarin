@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="User_Basic.MasterHomeDetail"
+             Title="WELLCOME TO App KienPV"
+             
+             BackgroundColor="#85030d">
+      <StackLayout >
+        
+        <Label x:Name="lbhome" Margin="50,30" Text="CHÚC MỪNG NĂM MỚI 2023 !" TextColor="Navy" HorizontalTextAlignment="Center" VerticalOptions="Center" FontAttributes="Bold" FontSize="40" ></Label>
+        <Image Source="tu_2023_1.jpg" ></Image>
+
+    </StackLayout>
+   
+       
+</ContentPage>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="User_Basic.Login"
+             BackgroundColor="#112B47">
+                
+    <ContentPage.Content>
+        <StackLayout  VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+            <Label Text="Đồng hành cùng khách hàng đi tới thành công" FontAttributes="Bold" TextColor="Gray" FontSize="Medium" HorizontalTextAlignment="Center" FontFamily="Roboto" 
+                   >
+            
+            </Label>
+                <!--<StackLayout x:Name="MyStack">
+                    xử lý biding dưới code
+                    <Label x:Name="lb1"></Label>
+                    Gán biding context trong source
+                    <Label x:Name="lb2" Text="{Binding Path=type}"></Label>
+
+                    Gọi biding khác, sẽ lấy biding khác, không lấy biding chứa nó nữa
+                    <Label Text="{Binding Value}" BindingContext="{x:Reference Mysilder}"></Label>
+
+                </StackLayout>
+
+            <Slider x:Name="Mysilder" Maximum="360" Minimum="0"></Slider>-->
+            <Image Source="dao.png" />
+            <!--Rotation="{Binding Source={x:Reference Mysilder},Path=Value}"-->
+            <!--dUNG Mode trong biding để điều khiển biding theo chiều nào-->
+            <StackLayout VerticalOptions="Center" HorizontalOptions="FillAndExpand" Padding="40,10">
+                <!--Text="{Binding Source={x:Reference TxtPass_Login},Path=Text,Mode=OneWay}" -->
+                <!-- Mặc định là twoway hết -->
+                <Entry x:Name="TxtUser_Login" Placeholder="UserName" TextColor="White" PlaceholderColor="Gray"></Entry>
+              <Entry x:Name="TxtPass_Login" Placeholder="PassWord" IsPassword="True" TextColor="White" PlaceholderColor="Gray"></Entry>
+              
+              <Button 
+                  VerticalOptions="Center"
+                  x:Name="btnLogin"
+                  BorderWidth="1.5"
+                  BorderColor="ForestGreen"
+                  BackgroundColor="Transparent"
+                  Text="Login"
+                  TextColor="Gray"
+                  CornerRadius="50"
+                  Clicked="BtnLogin_Clicked"
+               ></Button>
+              <Label HorizontalOptions="Center" >
+                  <Label.FormattedText>
+                      <FormattedString>
+                          <Span Text="Bạn đã có tài khoản chưa? " TextColor="Gray"></Span>
+                          <Span Text="Đăng ký" TextColor="Gray" FontAttributes="Bold" TextDecorations="Underline"></Span>
+                      </FormattedString>
+                    
+                  </Label.FormattedText>
+                  <Label.GestureRecognizers>
+                      <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped">
+                        
+                      </TapGestureRecognizer>
+                  </Label.GestureRecognizers>
+              </Label>
+              
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

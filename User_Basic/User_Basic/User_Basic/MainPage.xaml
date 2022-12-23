@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:User_Basic"
+             x:Class="User_Basic.MainPage">
+
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Margin="10,10,10,0">
+            <!-- mặc định stackLayout theo chiều dọc-->
+            <Label Text="Số thứ nhất" FontSize="Medium" ></Label>
+            <Entry x:Name="TxtSo_thu_1" Placeholder="Nhập số thứ nhất"></Entry>
+            <Label Text="số thứ 2" FontSize="Medium"></Label>
+            <Entry x:Name="TxtSo_Thu_2" Placeholder="Nhập số thứ 2"></Entry>
+            <StackLayout Orientation ="Horizontal" Padding="5,0,5,0">
+                <Button x:Name="btnTinh" Text="Tính toán" WidthRequest="100" Clicked="BtnTinh_Clicked" ></Button>
+                <Button x:Name="btnRefresh" Text="Làm mới" WidthRequest="100" Clicked="BtnRefresh_Clicked"></Button>
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

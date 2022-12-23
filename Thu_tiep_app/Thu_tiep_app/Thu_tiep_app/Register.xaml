@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Thu_tiep_app.Register">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Họ tên" FontAttributes="Bold" ></Label>
+            <Entry x:Name="txtRe_name" Placeholder="Mời nhập họ tên vào đây" PlaceholderColor="Gray"></Entry>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

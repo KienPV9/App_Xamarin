@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Thu_tiep_app.Login"
+             BackgroundColor="#112B47" >
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+            <StackLayout VerticalOptions="Center" HorizontalOptions="FillAndExpand" Padding="40,10">
+                <Entry x:Name="TxtLogin" Placeholder="UserName" PlaceholderColor="Gray" TextColor="White" HorizontalOptions="FillAndExpand"></Entry>
+                <Entry x:Name="TxtPassword" IsPassword="True" Placeholder="PassWord" PlaceholderColor="Gray" TextColor="White" HorizontalOptions="FillAndExpand"></Entry>
+                <Button x:Name="btnLogin" Text="Login"  BackgroundColor="Transparent" CornerRadius="50" TextColor="White" BorderWidth="1.5" BorderColor="Yellow"></Button>
+            </StackLayout>
+            <Label HorizontalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString >
+                        <Span Text="Bạn đã có tài khoản chưa? " TextColor="Gray" ></Span>
+                        <Span Text="Đăng ký" TextDecorations="Underline" FontAttributes="Bold" TextColor="Gray"></Span>
+                    </FormattedString>
+                    
+                </Label.FormattedText>
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"></TapGestureRecognizer>
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
